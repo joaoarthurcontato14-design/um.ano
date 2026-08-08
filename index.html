@@ -233,7 +233,7 @@ const PASSWORD="25102008";
 // Para mensagens permanentes entre aparelhos, preencha API_URL depois do pequeno
 // passo de configuração indicado no LEIA-ME.txt. Sem isso, o site usa apenas
 // armazenamento local do navegador.
-const API_URL="";
+const API_URL = "https://script.google.com/macros/s/AKfycbw5774INB_8r6BCer09NvVyZAjcsGumVyM6om3OyHj98WkWEP67051ScrVyEPQ9EHMp/exec";
 
 const login=document.getElementById("login"),pw=document.getElementById("pw"),err=document.getElementById("err");
 login.addEventListener("submit",e=>{e.preventDefault();if(pw.value===""+PASSWORD){document.getElementById("gate").classList.add("hidden");document.getElementById("site").classList.add("show");loadMessages()}else{err.style.display="block";pw.select()}});
